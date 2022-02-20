@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :focus_areas
   resources :accomplishments
   devise_for :users
   root to: "home#index"

@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Focus areas</h1>
+
+<div id="focus_areas">
+  <% @focus_areas.each do |focus_area| %>
+    <%= render focus_area %>
+    <p>
+      <%= link_to "Show this focus area", focus_area %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New focus area", new_focus_area_path %>

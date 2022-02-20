@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @focus_area %>
+
+<div>
+  <%= link_to "Edit this focus area", edit_focus_area_path(@focus_area) %> |
+  <%= link_to "Back to focus areas", focus_areas_path %>
+
+  <%= button_to "Destroy this focus area", @focus_area, method: :delete %>
+</div>
