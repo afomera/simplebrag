@@ -16,6 +16,11 @@
     <%= form.text_field :name %>
   </div>
 
+  <div class="form-group">
+    <%= form.label :focus_area_id %>
+    <%= form.select :focus_area_id, options_from_collection_for_select(Current.user.focus_areas, :id, :name, form.object.focus_area_id) %>
+  </div>
+
   <div>
     <%= form.label :description, style: "display: block" %>
     <%= form.rich_text_area :description %>
