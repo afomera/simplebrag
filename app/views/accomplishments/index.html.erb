@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Accomplishments</h1>
+
+<div id="accomplishments">
+  <% @accomplishments.each do |accomplishment| %>
+    <%= render accomplishment %>
+    <p>
+      <%= link_to "Show this accomplishment", accomplishment %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New accomplishment", new_accomplishment_path %>

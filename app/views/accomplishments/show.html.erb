@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @accomplishment %>
+
+<div>
+  <%= link_to "Edit this accomplishment", edit_accomplishment_path(@accomplishment) %> |
+  <%= link_to "Back to accomplishments", accomplishments_path %>
+
+  <%= button_to "Destroy this accomplishment", @accomplishment, method: :delete %>
+</div>
