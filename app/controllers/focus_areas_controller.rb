@@ -1,4 +1,5 @@
 class FocusAreasController < ApplicationController
+  before_action :authenticate_user!
   before_action :set_focus_area, only: %i[ show edit update destroy ]
 
   # GET /focus_areas or /focus_areas.json

@@ -1,4 +1,5 @@
 class AccomplishmentsController < ApplicationController
+  before_action :authenticate_user!
   before_action :set_accomplishment, only: %i[ show edit update destroy ]
 
   # GET /accomplishments or /accomplishments.json
